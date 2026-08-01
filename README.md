@@ -13,7 +13,9 @@ Dino Tim was just a plastic T-Rex and the desk's lead debugging mascot, but toni
 
 To contain the anomaly, Jasmine rigged a virtual camera to endlessly orbit the object on its Y-axis. The monitor instantly split in two. On the left, the glowing green cube spun flawlessly in 3D space. On the right, a blazing, inferno-colored depth map tracked its exact hidden structure. 
 
-Sparsh stared at the synchronized render, then down at the plastic dinosaur. "Well, Tim. You're a cube now."
+Then something shifted. The cube's edges softened, refusing to sharpen no matter how long they trained. A faint ghost of the cube flickered behind the solid one, as if Tim's spirit was trying to escape. The depth map erupted into noisy static wherever the cube wasn't, and stray green pixels bled into places they didn't belong, like the cube was seeing things behind its own back.
+
+Sparsh stared at the synchronized render, then down at the plastic dinosaur. "Well, Tim. You're a cube now. And you're haunted."
 
 ---
 
