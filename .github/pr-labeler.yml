@@ -1,0 +1,57 @@
+"rendering":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "src/nerf_scan/rendering.py"
+
+"encoding":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "src/nerf_scan/encoding.py"
+
+"scene":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "src/nerf_scan/scene.py"
+
+"display":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "src/nerf_scan/display.py"
+
+"camera":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "src/nerf_scan/camera.py"
+
+"model":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "src/nerf_scan/model.py"
+
+"engine":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "src/nerf_scan/engine.py"
+          - "main.py"
+
+"tests":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "tests/**"
+
+"docs":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/*.md"
+          - "README.md"
+
+"dependencies":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "pyproject.toml"
+          - "uv.lock"
+
+"ci":
+  - changed-files:
+      - any-glob-to-any-file:
+          - ".github/**"
