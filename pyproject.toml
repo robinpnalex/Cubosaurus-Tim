@@ -1,0 +1,29 @@
+[project]
+name = "nerf-scan"
+version = "0.1.0"
+description = "A from-scratch NeRF that trains live, rendering RGB + false-color CT-style depth"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "opencv-python",
+    "numpy",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[project.scripts]
+nerf-scan = "nerf_scan.engine:run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/nerf_scan"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
