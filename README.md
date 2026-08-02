@@ -1,6 +1,6 @@
 # Cubosaurus-Tim 🦖🧊
 
-![Cubosaurus-Tim](cover.gif)
+![Cubosaurus-Tim](dino_tim_becomes_cube_v4.gif)
 
 ## The Story of Tim
 Dino Tim was just a plastic T-Rex and the desk's lead debugging mascot, but tonight he was meant for digital immortality. Jasmine and Sparsh had spent hours trying to code Tim into a 3D space completely from scratch, using zero external files or datasets.
