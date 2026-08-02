@@ -50,7 +50,7 @@ def render_rays(model, encoder, rays_o, rays_d, near, far, n_samples, device, pe
 
     encoded = encoder(pts.reshape(-1, 3))
     rgb_flat, sigma_flat = model(encoded)
-    rgb = rgb_flat.view(H, W, 4, 3)
+    rgb = rgb_flat.view(H, W, 3, 3)
     sigma = sigma_flat.view(H, W, n_samples)
 
     dists = compute_deltas(t_vals)
