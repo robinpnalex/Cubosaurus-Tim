@@ -5,8 +5,8 @@ def stratified_sample_t_vals(near, far, n_samples, H, W, device, perturb=True):
     t_vals = torch.linspace(near, far, n_samples, device=device)
     if perturb:
         mids = 0.5 * (t_vals[1:] + t_vals[:-1])
-        upper = torch.cat([mids, t_vals[-1:]])
-        lower = torch.cat([t_vals[:1], mids])
+        lower = torch.cat([mids, t_vals[-1:]])
+        upper = torch.cat([t_vals[:1], mids])
         t_rand = torch.rand(H, W, n_samples, device=device)
         t_vals = lower + (upper - lower) * t_rand
     else:
@@ -50,7 +50,7 @@ def render_rays(model, encoder, rays_o, rays_d, near, far, n_samples, device, pe
 
     encoded = encoder(pts.reshape(-1, 3))
     rgb_flat, sigma_flat = model(encoded)
-    rgb = rgb_flat.view(H, W, n_samples, 3)
+    rgb = rgb_flat.view(H, W, 4, 3)
     sigma = sigma_flat.view(H, W, n_samples)
 
     dists = compute_deltas(t_vals)
